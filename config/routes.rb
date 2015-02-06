@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  get '/etsy_search', to: 'etsy#search'
+  get '/etsy/search', to: 'etsy#search'
 end
