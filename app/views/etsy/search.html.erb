@@ -38,22 +38,24 @@
       </div>
     </header>
 
-    <% if @results%>
+    <% if @results %>
       <% @results.each do |x| %>
+      <ol>
 
-    <div class="centerpage">
-      <li>
-      <div class="image">
-        <img src=<%= x["Images"][0][url_170x135] %>>
+      <div class="itemboxes">
+        <li>
+        <div class="image">
+          <img src=<%= x["Images"][0][url_170x135] %>>
+        </div>
+        <div class="pricing">
+          <%= x["price"] %>
+        </div>
+        <div class="result-name">
+          <%= x["title"] %>
+        </div>
+        </li>
       </div>
-      <div class="pricing">
-        <%= x["price"] %>
-      </div>
-      <div class="result-name">
-        <%= x["title"] %>
-      </div>
-      </li>
-    </div>
+      </ol>
         <% end %>
       <% end %>
 
