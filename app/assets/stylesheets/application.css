@@ -13,3 +13,131 @@
  *= require_tree .
  *= require_self
  */
+
+
+body {
+  padding: 0 10px;
+}
+
+body {
+  background-color: #f5f5f1;
+}
+
+body {
+  font-family: "Arial", "Helvetica";
+  font-size: 12px;
+  text-align: center;
+  display: block
+}
+
+header {
+  position: relative;
+  margin: 0 -10px;
+  padding: 0;
+  background: #FFFFFF;
+  border-bottom: 0 solid;
+  box-shadow: 0 1px 4px;
+  z-index: 1000;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.entire-header {
+  width: 1000px;
+  height: 80px;
+  padding: 0 10px 0,
+  text-align: left;
+}
+
+.leftsection{
+  float: left;
+  width: 75px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.leftsection #etsy-logo {
+  width: 75px;
+  height: 36px;
+  margin-top: 5px;
+  margin-left: 140px;
+}
+
+.search-bar-wrap {
+  float: left;
+  margin-top: 22px;
+  position: absolute;
+  margin-left: 240px;
+}
+
+#search-form {
+  float: left;
+  width: 94%;
+  height: 80px;
+  margin-left: 20px;
+}
+
+.search-bar{
+  float: left;
+  height: 31px;
+  font-size: 17px;
+  margin-left: 3px;
+  width: 215px;
+}
+
+.search-button {
+  float: right;
+  background-color: #398a9d;
+  padding: 7px, 15px, 8px;
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 17px;
+  border-radius: 1px;
+  border: 1px, solid #1A87B9;
+  border-color: #54acc7 #4ca0ba #398a9d;
+  text-align: center;
+  z-index: 10;
+}
+
+.right-section {
+  float: right;
+  margin: 0;
+  height: 60px;
+  width: 170px;
+  margin-right: -150px;
+}
+
+#help-button {
+  float: left;
+  margin-top: 10%;
+}
+
+#register{
+  position: center;
+  margin-top: 10%;
+  width: 115px;
+}
+
+#sign-in {
+  float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
