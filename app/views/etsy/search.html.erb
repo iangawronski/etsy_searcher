@@ -5,36 +5,57 @@
   </head>
   <body>
     <header>
-      <div class="leftsection">
-        <h1>
-          <a href="https://www.etsy.com/?ref=lgo"><img src="https://www.etsy.com/assets/dist/images/etsylogo.20150106184300.png" alt="Etsy Logo"></a>
-        </h1>
-      </div>
-      <div class="search-bar-wrap">
-        <%= form_tag etsy_search_path, method: 'get', :id => 'searchForm' do %>
-          <%= text_field_tag 'search_query', params[:q], :class => "searchBar",  :placeholder => 'Search for items or shops' %>
-          <%= submit_tag 'Search', :class => "squareButton" %>
-        <% end %>
-      </div>
-      <div class="browse">
-        <a href ="">
-          <span class="browseone">
-            <span class="browseinner">Browse</span><span class="browsetwo"></span>
-          </span>
-        </a>
-      </div>
-      <div class="right-section">
-        <li class="first-two-right">
-          <a href="https://www.etsy.com/help?ref=hdr">Help</a>
-        </li>
-        <li id="register" class="first-two-right">
-          <a href="https://www.etsy.com/join?ref=hdr&from_page=https://www.etsy.com/search">Register</a>
-        </li>
-        <li id="sign-in"class="sign-in-button">
-          <a href="https://www.etsy.com/signin?ref=hdr&from_page=https://www.etsy.com/search">Sign In</a>
-        </li>
+      <div class="entire-header">
+        <div class="leftsection">
+          <h1>
+            <a href="https://www.etsy.com/?ref=lgo"><img src="https://www.etsy.com/assets/dist/images/etsylogo.20150106184300.png" id="etsy-logo"></a>
+          </h1>
+        </div>
+        <div class="search-bar-wrap">
+          <%= form_tag etsy_search_path, method: 'get', :id => 'search-form' do %>
+            <%= text_field_tag 'search_query', params[:q], :class => "search-bar",  :placeholder => 'Search for items or shops' %>
+            <%= submit_tag 'Search', :class => "search-button" %>
+          <% end %>
+        </div>
+        <div class="browse">
+          <a href ="">
+            <span class="browseone">
+              <span class="browseinner">Browse</span><span class="browsetwo"></span>
+            </span>
+          </a>
+        </div>
+        <div class="right-section">
+          <li id="help-button">
+            <a href="https://www.etsy.com/help?ref=hdr">Help</a>
+          </li>
+          <li id="register">
+            <a href="https://www.etsy.com/join?ref=hdr&from_page=https://www.etsy.com/search">Register</a>
+          </li>
+          <li id="sign-in">
+            <a href="https://www.etsy.com/signin?ref=hdr&from_page=https://www.etsy.com/search">Sign In</a>
+          </li>
+        </div>
       </div>
     </header>
+
+    <% if @results%>
+      <% @results.each do |x| %>
+
+    <div class="centerpage">
+      <li>
+      <div class="image">
+        <img src=<%= x["Images"][0][url_170x135] %>>
+      </div>
+      <div class="pricing">
+        <%= x["price"] %>
+      </div>
+      <div class="result-name">
+        <%= x["title"] %>
+      </div>
+      </li>
+    </div>
+        <% end %>
+      <% end %>
 
     <footer>
       <div class="top-footer">
