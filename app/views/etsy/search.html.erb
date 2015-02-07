@@ -10,6 +10,19 @@
           <a href="https://www.etsy.com/?ref=lgo"><img src="https://www.etsy.com/assets/dist/images/etsylogo.20150106184300.png" alt="Etsy Logo"></a>
         </h1>
       </div>
+      <div class="search-bar-wrap">
+        <%= form_tag etsy_search_path, method: 'get', :id => 'searchForm' do %>
+          <%= text_field_tag 'search_query', params[:q], :class => "searchBar",  :placeholder => 'Search for items or shops' %>
+          <%= submit_tag 'Search', :class => "squareButton" %>
+        <% end %>
+      </div>
+      <div class="browse">
+        <a href ="">
+          <span class="browseone">
+            <span class="browseinner">Browse</span><span class="browsetwo"></span>
+          </span>
+        </a>
+      </div>
       <div class="right-section">
         <li class="first-two-right">
           <a href="https://www.etsy.com/help?ref=hdr">Help</a>
@@ -22,7 +35,6 @@
         </li>
       </div>
     </header>
-
 
     <footer>
       <div class="top-footer">
@@ -54,14 +66,6 @@
         </li>
       </div>
     </footer>
-      <% if @results%>
-        <ol>
-          <% @results.each do %>
-            <li><%= @results %></li>
-          <% end %>
-        </ol>
-      <% end %>
-
   </body>
 </html>
 
