@@ -129,6 +129,15 @@ ul {
 }
 
 
+.itemboxes {
+  width: 222px;
+  margin-right: 28px;
+  margin-bottom: 18px;
+  float: left;
+  list-style: none;
+  border: 1px solid;
+  background-color: white
+}
 
 
 
