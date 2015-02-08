@@ -140,21 +140,102 @@ ul {
   margin-top: 18px;
 }
 
+.basketball {
+  text-align: left;
+  margin-left: -20px;
+}
+
+.returned{
+  margin-top: -30px;
+  text-align: left;
+  margin-left: -15px;
+  color: #666;
+  font-size: 13px;
+}
+
+h2{
+  font-size: 13px;
+  line-height: 13px;
+  color: #666;
+  padding-bottom: 6px;
+  text-align: left;
+}
+
+.side-text {
+  font-size: 13px;
+  color: #0192B5;
+  padding-left: 5px;
+}
+
+.sidebar {
+  margin-right: 10px;
+  margin-left: 8.5%;
+  width: 190px;
+  background-color: #FFFFFF;
+  float: left;
+  height: 1000px;
+  margin-top: 32px;
+  border-radius: 3px;
+  padding: 14px 14px 14px 14px;
+  border: 1px solid #ececec;
+}
+
+.search-results-center {
+  width: 1000px;
+  display: inline-block;
+}
+
 .itemboxes {
-  width: 240px;
+  width: 230px;
   height: 250px;
-  margin-right: 28px;
-  margin-bottom: 18px;
+  margin: 20px;
   float: left;
   list-style: none;
-  border: 1px solid;
-  background-color: white
+  border: 1px solid #ececec;
+  background-color: #FFFFFF;
+}
+
+.itemboxes:hover{
+  box-shadow: 0 0 1px #cccccc;
 }
 
 .image {
-  width: 214px;
-  height: 170px;
-  margin-left: 13px;
+  margin: 5px;
+}
+
+.result-name {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 12px;
+  padding-top: 2px;
+  margin: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-bottom: 2px;
+  text-overflow: ellipsis;
+}
+
+.details {
+  float: left;
+  width: 100px;
+}
+
+.shopname {
+  font-family: "Arial", "Helvetica", sans-serif;
+  color: #b7b2b2;
+  font-size: 12px;
+  display: inline-block;
+  width: 75%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pricing {
+  display: inline-block;
+  color: #78c042;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 25%;
 }
 
 #footer {

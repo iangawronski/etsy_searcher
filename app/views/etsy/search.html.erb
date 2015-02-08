@@ -1,4 +1,4 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <title></title>
@@ -65,11 +65,8 @@
           <li>
           <div class="image">
           <%= link_to x['url'] do %>
-            <%= image_tag x['Images'][0]['url_170x135'], size: "214x170" %>>
+            <%= image_tag x['Images'][0]['url_170x135'], size: "214x170" %>
           <% end %>
-          </div>
-          <div class="pricing">
-            <%= "$#{x["price"]} USD" %>
           </div>
           <div class="result-name">
             <%= x["title"] %>
@@ -80,6 +77,9 @@
             <%= "#{x['Shop']['shop_name']}" %>
             </div>
             <% end %>
+          </div>
+          <div class="pricing">
+            <%= "$#{x["price"]} USD" %>
           </div>
           </li>
         </div>
