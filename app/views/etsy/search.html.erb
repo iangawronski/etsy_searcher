@@ -38,31 +38,61 @@
       </div>
     </header>
 
-    <% if @results %>
-      <% @results.each do |x| %>
-      <ol>
-
-      <div class="itemboxes">
-        <li>
-        <div class="image">
-          <img src=<%= x['Images'][0]['url_170x135'] %>>
-        </div>
-        <div class="pricing">
-          <%= x["price"] %>
-        </div>
-        <div class="result-name">
-          <%= x["title"] %>
-        </div>
-        </li>
+    <div class="sidebar">
+    <p class="returned">Show Results For:</p>
+      <h2>Item Type</h2>
+      <div class="basketball">
+        <ul>
+          <li><span class="side-text">All Items</span></li>
+          <li><span class="side-text">Handmande</span></li>
+          <li><span class="side-text">Vintage</span></li>
+          <li><span class="side-text">Craft Supplies</span></li>
+        </ul>
       </div>
-      </ol>
-        <% end %>
-      <% end %>
+      <li>stuff</li>
+      <li>stuff</li>
+      <li>stuff</li>
+      <li>stuff</li>
+      <li>stuff</li>
+    </div>
 
-    <footer>
+    <div class="search-results-center">
+      <% if @results %>
+        <% @results.each do |x| %>
+        <ol>
+
+        <div class="itemboxes">
+          <li>
+          <div class="image">
+          <%= link_to x['url'] do %>
+            <%= image_tag x['Images'][0]['url_170x135'], size: "214x170" %>>
+          <% end %>
+          </div>
+          <div class="pricing">
+            <%= "$#{x["price"]} USD" %>
+          </div>
+          <div class="result-name">
+            <%= x["title"] %>
+          </div>
+          <div class="details">
+          <%= link_to x['Shop']['url'] do %>
+            <div class="shopname">
+            <%= "#{x['Shop']['shop_name']}" %>
+            </div>
+            <% end %>
+          </div>
+          </li>
+        </div>
+        </ol>
+          <% end %>
+        <% end %>
+    </div>
+
+    <!-- <footer> -->
+    <div id="footer">
       <div class="top-footer">
         <li class="region">
-          <a href="https://www.etsy.com/search?q=hello#region-select"><img src="http://agconexus.agconexusinc.netdna-cdn.com/wp-content/uploads/2013/02/Globe.png">United States</a>
+          <a href="https://www.etsy.com/search?q=hello#region-select"><img src="http://agconexus.agconexusinc.netdna-cdn.com/wp-content/uploads/2013/02/Globe.png" id="world-image">United States</a>
         </li>
         <li class="language">
           <a href="https://www.etsy.com/search?q=hello#language-select">English (US)</a>
@@ -71,6 +101,7 @@
           <a href="https://www.etsy.com/search?q=hello#currency-select">$ USD</a>
         </li>
       </div>
+    </div>
       <div class="lower-footer">
         <li class="copyright">
           <p>&copy 2015 Etsy, Inc.</p>
@@ -81,14 +112,15 @@
         <li class="privacy">
           <a href="https://www.etsy.com/help/article/480/?ref=ftr">Privacy</a>
         </li>
-        <li class="copyright">
+        <li class="copyright-two">
           <a href="https://www.etsy.com/help/article/482/?ref=ftr">Copyright</a>
         </li>
         <li class="ads">
           <a href="https://www.etsy.com/help/article/3293?ref=ftr">Internet Based-Ads</a>
         </li>
       </div>
-    </footer>
+    </div>
+   <!-- </footer> -->
   </body>
 </html>
 

@@ -16,7 +16,8 @@
 
 
 body {
-  padding: 0 10px;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -32,12 +33,9 @@ body {
 
 header {
   position: relative;
-  margin: 0 -10px;
-  padding: 0;
+  width: 100%;
   background: #FFFFFF;
   border-bottom: 0 solid;
-  box-shadow: 0 1px 4px;
-  z-index: 1000;
 }
 
 li {
@@ -48,10 +46,20 @@ ul {
   list-style-type: none;
 }
 
+.sidebar {
+  margin-right: 15px;
+  margin-left: 15px;
+  width: 200px;
+  background-color: #FFFFFF;
+  float: left;
+  height: 1000px;
+  margin-top: 15px;
+}
+
 .entire-header {
   width: 1000px;
   height: 80px;
-  padding: 0 10px 0,
+  padding: 0 10px 0;
   text-align: left;
 }
 
@@ -105,32 +113,36 @@ ul {
   z-index: 10;
 }
 
+
 .right-section {
   float: right;
   margin: 0;
   height: 60px;
-  width: 170px;
+  width: 250px;
   margin-right: -150px;
-}
-
-#help-button {
-  float: left;
-  margin-top: 10%;
-}
-
-#register{
-  position: center;
-  margin-top: 10%;
-  width: 115px;
 }
 
 #sign-in {
   float: right;
+  margin-left: 100px;
+  margin-top: -15px;
 }
 
+#register{
+  float: right;
+  margin-top: 18px;
+  margin-right: 40px;
+  width: 115px;
+}
+
+#help-button {
+  float: left;
+  margin-top: 18px;
+}
 
 .itemboxes {
-  width: 222px;
+  width: 240px;
+  height: 250px;
   margin-right: 28px;
   margin-bottom: 18px;
   float: left;
@@ -138,6 +150,126 @@ ul {
   border: 1px solid;
   background-color: white
 }
+
+.image {
+  width: 214px;
+  height: 170px;
+  margin-left: 13px;
+}
+
+#footer {
+
+}
+
+.top-footer{
+  display: inline-block;
+  margin-top: 300px;
+  margin-right: 250px;
+}
+
+.currency {
+  float: left;
+  margin: 19px;
+}
+
+.language{
+  float: left;
+  margin-top: 19px;
+}
+
+.region{
+  float: left;
+  padding: 15px;
+}
+
+#world-image{
+  height: 15px;
+  width: 20px;
+}
+
+.lower-footer {
+  display: inline-block;
+  width: 450px;
+  margin-right: 100px;
+}
+
+.ads {
+  float: left;
+  margin-top: 12px;
+  margin-right: 20px;
+}
+
+.copyright-two {
+  float: left;
+  margin-top: 12px;
+  margin-right: 20px;
+}
+
+.privacy{
+  float: left;
+  margin-top: 12px;
+  margin-right: 20px
+}
+
+.terms {
+  float: left;
+  margin-top: 12px;
+  margin-right: 20px;
+}
+
+.copyright {
+  float: left;
+  padding-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
