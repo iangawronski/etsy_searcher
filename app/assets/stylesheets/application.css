@@ -46,9 +46,14 @@ ul {
   list-style-type: none;
 }
 
+a:-webkit-any-link {
+  text-decoration: none;
+  color: #0192b5;
+  padding-bottom: 6px;
+}
+
 .sidebar {
-  margin-right: 15px;
-  margin-left: 15px;
+  margin-left: 10%;
   width: 200px;
   background-color: #FFFFFF;
   float: left;
@@ -93,8 +98,8 @@ ul {
 
 .search-bar{
   float: left;
-  height: 31px;
-  font-size: 17px;
+  height: 28px;
+  font-size: 14px;
   margin-left: 3px;
   width: 215px;
 }
@@ -105,14 +110,22 @@ ul {
   padding: 7px, 15px, 8px;
   color: #fff;
   font-family: 'Helvetica Neue', sans-serif;
-  font-size: 17px;
+  font-size: 14px;
   border-radius: 1px;
   border: 1px, solid #1A87B9;
   border-color: #54acc7 #4ca0ba #398a9d;
   text-align: center;
   z-index: 10;
+  height: 34px;
+  margin-left: -1px;
+  width: 80px;
+  background: #4fa9c6;
 }
 
+.browse {
+  margin-left: 590px;
+  padding-top: 35px;
+}
 
 .right-section {
   float: right;
@@ -120,12 +133,21 @@ ul {
   height: 60px;
   width: 250px;
   margin-right: -150px;
+  margin-top: -32px;
 }
 
 #sign-in {
   float: right;
   margin-left: 100px;
-  margin-top: -15px;
+  margin-top: -26px;
+  background-color: #FFF;
+  -webkit-border-radius: 15px;
+  border: 1px solid #0192b5;
+  padding: 10px;
+}
+
+#sign-in:hover {
+  color: #98d0e0;
 }
 
 #register{
@@ -142,15 +164,19 @@ ul {
 
 .basketball {
   text-align: left;
-  margin-left: -20px;
+  border-bottom: 1px solid #ececec;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0192b5;
 }
 
 .returned{
-  margin-top: -30px;
+  margin-top: -34px;
   text-align: left;
   margin-left: -15px;
   color: #666;
   font-size: 13px;
+  font-weight: bold;
 }
 
 h2{
@@ -163,26 +189,94 @@ h2{
 
 .side-text {
   font-size: 13px;
-  color: #0192B5;
   padding-left: 5px;
+  color: #0192b5;
 }
 
+#side-button{
+  color: #0192b5;
+  text-decoration: none;
+}
+
+
 .sidebar {
-  margin-right: 10px;
-  margin-left: 8.5%;
+  margin-left: 9%;
   width: 190px;
   background-color: #FFFFFF;
   float: left;
-  height: 1000px;
+  height: 850px;
   margin-top: 32px;
   border-radius: 3px;
   padding: 14px 14px 14px 14px;
   border: 1px solid #ececec;
 }
 
+h3 {
+  font-size: 13px;
+  line-height: 13px;
+  color: #666;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+.handmade-category {
+  text-align: left;
+  font-size: 13px;
+  margin-left: -123px;
+  font-weight: bold;
+  color: #0192b5;
+  text-decoration: none;
+}
+
+.little-side-buttons {
+  margin-left: -123px;
+  text-align: left;
+  font-size: 13px;
+  color: #0192b5;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.handmade-list {
+  text-align: left;
+  margin-left: 125px;
+}
+
 .search-results-center {
   width: 1000px;
   display: inline-block;
+}
+
+.vintage-list{
+  text-align: left;
+  margin-left: 125px;
+  margin-top: 10px;
+}
+
+.vintage-category {
+  text-align: left;
+  font-size: 13px;
+  margin-left: -123px;
+  font-weight: bold;
+  color: #0192b5;
+  text-decoration: none;
+}
+
+.craft-list {
+  text-align: left;
+  padding-left: 125px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+}
+
+.craft-category {
+  text-align: left;
+  font-size: 13px;
+  margin-left: -123px;
+  font-weight: bold;
+  color: #0192b5;
+  text-decoration: none;
 }
 
 .itemboxes {
@@ -239,13 +333,12 @@ h2{
 }
 
 #footer {
-
+  margin-top: -150px;
 }
 
 .top-footer{
   display: inline-block;
   margin-top: 300px;
-  margin-right: 250px;
 }
 
 .currency {
@@ -271,7 +364,6 @@ h2{
 .lower-footer {
   display: inline-block;
   width: 450px;
-  margin-right: 100px;
 }
 
 .ads {
